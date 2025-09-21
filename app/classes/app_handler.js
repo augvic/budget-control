@@ -38,7 +38,7 @@ class AppHandler {
     }
 
     _renderMainHtml(win) {
-        win.loadFile("./main_window/main.html");
+        win.loadFile("./app/main_window/main.html");
     }
 
     _startMinMaxCloLogic(win) {

@@ -1,7 +1,7 @@
 {
-  "name": "controle_verba",
+  "name": "budget-control",
   "version": "1.0.0",
-  "description": "Aplicação para controle de verbas da área.",
+  "description": "Application for bugdet control in my enterprise.",
   "main": "./app/main.js",
   "dependencies": {
     "boolean": "^3.2.0",
@@ -79,14 +79,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/augvic/controle_verba.git"
+    "url": "git+https://github.com/augvic/budget-control.git"
   },
   "author": "Augusto Viceli",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/augvic/controle_verba/issues"
+    "url": "https://github.com/augvic/budget-control/issues"
   },
-  "homepage": "https://github.com/augvic/controle_verba#readme",
+  "homepage": "https://github.com/augvic/budget-control#readme",
   "build": {
     "appId": "com.augvic.controleverba",
     "productName": "Controle Verba",

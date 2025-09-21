@@ -4,8 +4,8 @@ import os
 import shutil
 
 analysis = Analysis(
-    scripts=['manage.py'],
-    hiddenimports=['server.db_router', 'openpyxl'],
+    scripts=['./manage.py'],
+    hiddenimports=['server.server.db_router', 'openpyxl'],
     optimize=0
 )
 
