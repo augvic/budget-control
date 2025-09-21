@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en" class="h-full">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle Verba</title>
+        <link rel="stylesheet" href="./styles/output.css">
+        <script type="module" src="./main.js" defer></script>
+    </head>
+
+    <body class="h-full overflow-hidden bg-gray-200 flex flex-col">
+
+        <header id="title_bar" class="w-full bg-gray-950 shadow z-40 h-[40px] flex items-center pl-3 app-region-drag">
+            <div id="min_max_clo_div" class="flex w-full h-full justify-end">
+                <input id="minimize" type="button" value="_" class="bg-gray-950 text-white h-full w-10 hover:bg-gray-700 app-region-no-drag cursor-default transition-background">
+                <input id="maximize" type="button" value="🗖" class="bg-gray-950 text-white h-full w-10 hover:bg-gray-700 app-region-no-drag cursor-default transition-background">
+                <input id="close" type="button" value="×" class="bg-gray-950 text-white h-full w-10 hover:bg-red-500 app-region-no-drag cursor-default transition-background">
+            </div>
+        </header>
+
+        <div id="loading_screen" style="height: calc(100% - 40px);" class="w-full fade-in-bot bg-gray-200 fixed justify-center items-center mt-[40px] cursor-wait flex">Carregando...</div>
+
+        <div id="active_module" style="height: calc(100% - 40px);" class="w-full bg-gray-200 flex"></div>
+        <script id="active_module_script"></script>
+
+    </body>
+
+</html>

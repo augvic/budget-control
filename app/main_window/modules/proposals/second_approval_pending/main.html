@@ -1,0 +1,42 @@
+<div id="container" class="flex flex-col h-full w-full bg-gray-200">
+    <div id="title_bar" class="w-full h-[50px] bg-gray-950 px-3 py-1 cursor-default flex items-center relative">
+        <div id="buttons_container" class="flex gap-2 absolute left-3 h-auto w-auto">
+            <div id="return_button_container" class="group h-auto w-auto">
+                <button id="return_button" class="text-white rounded-md text-2xl px-3 h-[100%] w-auto flex items-center justify-center outline-none transition-colors duration-300 hover:bg-gray-800 cursor-default">&lt;</button>
+                <p class="py-1 px-3 bg-gray-800 text-white rounded-md fade-in-bot absolute hidden group-hover:block mt-1 z-50">Voltar</p>
+            </div>
+        </div>
+        <h1 id="title_bar_label" class="text-white text-2xl mx-auto">Aguardando Segunda Aprovação</h1>
+        <div id="balance_container" class="flex gap-2 absolute right-3">
+            <p id="current_balance_label" class="text-white text-2xl">Saldo Atual:</p>
+            <p id="current_balance" class="text-white text-2xl"></p>
+        </div>
+    </div>
+    <div id="proposals_container" style="height: calc(100% - 50px);" class="flex flex-col w-full overflow-auto bg-gray-200">
+        <table id="proposals_table" class="h-auto w-auto whitespace-nowrap cursor-default border-collapse text-center">
+            <thead class="w-auto h-auto">
+                <tr class="bg-gray-900 text-white h-auto w-auto sticky top-0">
+                    <th class="p-2 h-auto w-auto">ID</th>
+                    <th class="p-2 h-auto w-auto">Data</th>
+                    <th class="p-2 h-auto w-auto">Assistente</th>
+                    <th class="p-2 h-auto w-auto">Revendedor/Cliente</th>
+                    <th class="p-2 h-auto w-auto">Certame/Negócio</th>
+                    <th class="p-2 h-auto w-auto">Modelo</th>
+                    <th class="p-2 h-auto w-auto">Processador</th>
+                    <th class="p-2 h-auto w-auto">Quantidade</th>
+                    <th class="p-2 h-auto w-auto">Valor Unitário</th>
+                    <th class="p-2 h-auto w-auto">Valor Total</th>
+                    <th class="p-2 h-auto w-auto">Verba Concedida</th>
+                    <th class="p-2 h-auto w-auto">Verba Concedida Porcentagem</th>
+                    <th class="p-2 h-auto w-auto">Status</th>
+                    <th class="p-2 h-auto w-auto">Aprovador Primário</th>
+                    <th class="p-2 h-auto w-auto">Data e Hora da Aprovação</th>
+                </tr>
+            </thead>
+            <tbody id="proposals_table_body"></tbody>
+        </table>
+    </div>
+    <div id="modal" style="height: calc(100vh - 40px);" class="hidden w-full fixed items-center justify-center bg-black/50">
+        <div id="modal_container" class="w-auto h-auto bg-gray-200 rounded-md p-5 flex flex-col gap-y-2 items-center justify-center"></div>
+    </div>
+</div>

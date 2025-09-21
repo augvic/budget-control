@@ -1,0 +1,98 @@
+<div id="container" class="h-full w-full flex flex-col bg-gray-200">
+    <div id="title_bar" class="w-full h-[50px] bg-gray-950 px-3 py-1 cursor-default flex items-center relative">
+        <div id="buttons_container" class="flex gap-2 absolute left-3 h-auto w-auto">
+            <div id="return_button_container" class="group h-auto w-auto">
+                <button id="return_button" class="text-white rounded-md text-2xl px-3 h-[100%] w-auto flex items-center justify-center outline-none transition-colors duration-300 hover:bg-gray-800 cursor-default">&lt;</button>
+                <p class="py-1 px-3 bg-gray-800 text-white rounded-md fade-in-bot absolute hidden group-hover:block mt-1">Voltar</p>
+            </div>
+            <div id="open_modal_button_container" class="group">
+                <button id="open_modal_button" class="h-auto w-auto p-2 rounded-md hover:bg-gray-800 transition-colors duration-300">
+                    <img src="./modules/proposals/icons/archived.svg" class="w-[25px] h-[100%]">
+                </button>
+                <p class="py-1 px-3 bg-gray-800 text-white rounded-md fade-in-bot absolute hidden group-hover:block mt-1 text-nowrap">Visualizar Propostas</p>
+            </div>
+        </div>
+        <h1 id="title_bar_label" class="text-white text-2xl mx-auto">Criar Proposta</h1>
+        <div id="balance_container" class="flex gap-2 absolute right-3">
+            <p id="current_balance_label" class="text-white text-2xl">Saldo Atual:</p>
+            <p id="current_balance" class="text-white text-2xl"></p>
+        </div>
+    </div>
+    <div id="form" style="height: calc(100% - 50px);" class="w-full bg-gray-200 flex flex-col items-center overflow-y-auto scroll-smooth p-3 gap-y-2">
+        <div id="columns" class="h-auto w-auto flex gap-x-2">
+            <div id="labels_column" class="flex flex-col gap-y-2 h-auto w-auto items-end">
+                <label class="h-[40px] flex items-center">Data:</label>
+                <label class="h-[40px] flex items-center">Assistente:</label>
+                <label class="h-[40px] flex items-center">Revendedor/Cliente:</label>
+                <label class="h-[40px] flex items-center">Certame/Negócio:</label>
+                <label class="h-[40px] flex items-center">Modelo:</label>
+                <label class="h-[40px] flex items-center">Processador:</label>
+                <label class="h-[40px] flex items-center">Quantidade:</label>
+                <label class="h-[40px] flex items-center">Valor Unitário:</label>
+                <label class="h-[40px] flex items-center">Valor Total:</label>
+                <label class="h-[40px] flex items-center">Verba Concedida:</label>
+            </div>
+            <div id="inputs_column" class="flex flex-col gap-y-2 h-auto w-auto items-start">
+                <input required id="data" type="date" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <input required id="assistente" type="text" list="assistentes" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <datalist id="assistentes"></datalist>
+                <input required id="revendedor_cliente" type="text" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <input required id="certame_negocio" type="text" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <input required id="produto" type="text" list="modelos" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <datalist id="modelos"></datalist>
+                <input required id="processador" type="text" list="processadores" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <datalist id="processadores"></datalist>
+                <input required id="quantidade" type="number" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <input required id="valor_unitario" value="R$ 0,00" type="text" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                <input readonly id="valor_total" value="R$ 0,00" type="text" class="h-[40px] w-[300px] p-3 outline-none cursor-default bg-gray-400">
+                <div id="verba_concedida_row" class="flex gap-2 h-auto w-auto">
+                    <input required id="verba_concedida" value="R$ 0,00" type="text" class="h-[40px] w-[300px] bg-white p-3 outline-none">
+                    <input required readonly id="verba_concedida_porcentagem" value="0%" type="text" class="h-[40px] w-[100px] bg-gray-400 p-3 outline-none cursor-default">
+                </div>
+            </div>
+        </div>
+        <div class="h-auto w-auto">
+            <input id="send_proposal" type="button" class="h-[50px] w-[140px] bg-green-400 text-white rounded-md hover:bg-green-700 transition-background cursor-pointer" value="Enviar Proposta">
+        </div>    
+    </div>
+    <div id="modal" style="height: calc(100vh - 40px);" class="hidden w-full fixed items-center justify-center bg-black/50">
+        <div id="modal_container" class="w-[90%] h-[90%] bg-gray-200 rounded-md p-3 flex flex-col gap-y-2">
+            <div id="modal_title_bar" class="w-full h-[30px] relative flex items-center">
+                <p class="text-2xl mx-auto cursor-default">Propostas</p>
+                <button id="close_modal_button" class="absolute right-3 text-white px-2 bg-red-400 hover:bg-red-700 rounded-full transition-colors duration-300">×</button>
+                <div id="excel_button_container" class="group absolute left-3">
+                    <button id="convert_to_excel" class="h-auto w-auto p-2 rounded-md hover:bg-gray-400 transition-colors duration-300">
+                        <img src="./modules/proposals/icons/excel.svg" class="w-[25px] h-[100%]">
+                    </button>
+                    <p class="py-1 px-3 bg-gray-800 text-white rounded-md fade-in-bot absolute hidden group-hover:block mt-1 text-nowrap z-50">Exportar para Excel</p>
+                </div>
+            </div>
+            <div id="table_container" style="height: calc(100% - 30px);" class="w-full rounded-md overflow-auto">
+                <table id="proposals_table" class="h-auto w-auto whitespace-nowrap cursor-default border-collapse text-center">
+                    <thead id="proposals_table_header" class="w-auto h-auto">
+                        <tr class="bg-gray-900 text-white h-auto w-auto sticky top-0">
+                            <th class="p-2 h-auto w-auto">ID</th>
+                            <th class="p-2 h-auto w-auto">Data</th>
+                            <th class="p-2 h-auto w-auto">Assistente</th>
+                            <th class="p-2 h-auto w-auto">Revendedor/Cliente</th>
+                            <th class="p-2 h-auto w-auto">Certame/Negócio</th>
+                            <th class="p-2 h-auto w-auto">Modelo</th>
+                            <th class="p-2 h-auto w-auto">Processador</th>
+                            <th class="p-2 h-auto w-auto">Quantidade</th>
+                            <th class="p-2 h-auto w-auto">Valor Unitário</th>
+                            <th class="p-2 h-auto w-auto">Valor Total</th>
+                            <th class="p-2 h-auto w-auto">Verba Concedida</th>
+                            <th class="p-2 h-auto w-auto">Verba Concedida Porcentagem</th>
+                            <th class="p-2 h-auto w-auto">Status</th>
+                            <th class="p-2 h-auto w-auto">Aprovador/Reprovador</th>
+                            <th class="p-2 h-auto w-auto">Data e Hora da Aprovação ou Recusa</th>
+                            <th class="p-2 h-auto w-auto">Forma de Abatimento</th>
+                            <th class="p-2 h-auto w-auto">Data do Abatimento</th>
+                        </tr>
+                    </thead>
+                    <tbody id="proposals_table_body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
