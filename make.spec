@@ -25,14 +25,14 @@ BASE_ORIGIN = os.getcwd()
 BASE_DESTINY = f"{os.getcwd()}\\dist"
 
 FILES = [
-    (f"{BASE_ORIGIN}\\admin.sqlite3", f"{BASE_DESTINY}\\admin.sqlite3"),
-    (f"{BASE_ORIGIN}\\proposals\\proposals.sqlite3", f"{BASE_DESTINY}\\proposals\\proposals.sqlite3"),
-    (f"{BASE_ORIGIN}\\login\\login.sqlite3", f"{BASE_DESTINY}\\login\\login.sqlite3"),
+    (f"{BASE_ORIGIN}\\server\\admin.sqlite3", f"{BASE_DESTINY}\\admin.sqlite3"),
+    (f"{BASE_ORIGIN}\\server\\proposals\\proposals.sqlite3", f"{BASE_DESTINY}\\proposals\\proposals.sqlite3"),
+    (f"{BASE_ORIGIN}\\server\\login\\login.sqlite3", f"{BASE_DESTINY}\\login\\login.sqlite3"),
 ]
 
 FOLDERS = [
-    (f"{BASE_ORIGIN}\\admin_config\\static", f"{BASE_DESTINY}\\admin_config\\static"),
-    (f"{BASE_ORIGIN}\\admin_config\\templates", f"{BASE_DESTINY}\\admin_config\\templates"),
+    (f"{BASE_ORIGIN}\\server\\admin_config\\static", f"{BASE_DESTINY}\\admin_config\\static"),
+    (f"{BASE_ORIGIN}\\server\\admin_config\\templates", f"{BASE_DESTINY}\\admin_config\\templates"),
 ]
 
 def create_dirs() -> None:
