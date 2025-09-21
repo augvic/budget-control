@@ -29,7 +29,7 @@ Each user have their own access and permissions to execute each responsibility: 
 
 Login:
 <div>
-    <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/first_approval.png?raw=true" />
+    <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/login.png?raw=true" />
 </div>
 
 <br>
