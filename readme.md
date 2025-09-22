@@ -1,10 +1,10 @@
 ## 💵 Budget Control
 
-🏭 Budget control software made to my enterprise.
+🏭 Budget control software developed for my company.
 
 ## About
 
-This project was designed to the directorship of my work to them do the area budget control.
+This project was designed for the management team at my company to handle departmental budget control.
 
 ## Tech Stack
 
@@ -21,11 +21,12 @@ Frameworks:
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" />
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
 </div>
 
 ## Features
 
-Each user have their own access and permissions to execute each responsibility: Create proposal, first proposal approval and second approval.
+Each user has their own access and permissions, with specific responsibilities such as creating proposals, first-level approval, and second-level approval.
 
 Login:
 <div>
@@ -41,14 +42,14 @@ Create proposal:
 
 <br>
 
-First approval:
+First-level approval:
 <div>
     <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/first_approval.png?raw=true" />
 </div>
 
 <br>
 
-Second approval:
+Second-level approval:
 <div>
     <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/second_approval.png?raw=true" />
 </div>
@@ -59,3 +60,5 @@ Including invoice (after all approvals):
 <div>
     <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/including_nf.png?raw=true" />
 </div>
+
+The Budget Control system provides a reliable and structured way to manage departmental budgets, reducing errors and ensuring proper approval flows.
