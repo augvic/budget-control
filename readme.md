@@ -61,4 +61,6 @@ Including invoice (after all approvals):
     <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/including_nf.png?raw=true" />
 </div>
 
+<br>
+
 The Budget Control system provides a reliable and structured way to manage departmental budgets, reducing errors and ensuring proper approval flows.
