@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 
-const distFolder = path.resolve(__dirname, './dist');
-const winUnpackedFolder = path.resolve(__dirname, './dist/win-unpacked');
+const distFolder = path.resolve(__dirname, '../dist');
+const winUnpackedFolder = path.resolve(__dirname, '../dist/win-unpacked');
 const filesToDelete = [
     'builder-debug.yml',
     'builder-effective-config.yaml',

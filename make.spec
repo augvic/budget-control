@@ -5,7 +5,7 @@ import shutil
 
 analysis = Analysis(
     scripts=['./server/manage.py'],
-    hiddenimports=['server.server.db_router', 'openpyxl'],
+    hiddenimports=['server.db_router', 'openpyxl'],
     optimize=0
 )
 
@@ -18,7 +18,7 @@ exe = EXE(
     analysis.datas,
     name='Controle Verba Server',
     upx=True,
-    icon="icon.ico"
+    icon="./server/icon.ico"
 )
 
 BASE_ORIGIN = os.getcwd()

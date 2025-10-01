@@ -98,7 +98,7 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "icon.png"
+      "icon": "./app/icon.png"
     },
     "linux": {
       "target": "AppImage"
