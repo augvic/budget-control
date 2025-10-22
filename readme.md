@@ -6,6 +6,10 @@
 
 This project was designed for the management team at my company to handle departmental budget control.
 
+Each user has their own access and permissions, with specific responsibilities such as creating proposals, first-level approval, and second-level approval.
+
+The Budget Control system provides a reliable and structured way to manage departmental budgets, reducing errors and ensuring proper approval flows.
+
 ## Tech Stack
 
 Languages:
@@ -26,9 +30,7 @@ Frameworks:
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />
 </div>
 
-## Features
-
-Each user has their own access and permissions, with specific responsibilities such as creating proposals, first-level approval, and second-level approval.
+## Screenshots
 
 Login:
 <div>
@@ -64,5 +66,3 @@ Including invoice (after all approvals):
 </div>
 
 <br>
-
-The Budget Control system provides a reliable and structured way to manage departmental budgets, reducing errors and ensuring proper approval flows.
