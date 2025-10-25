@@ -34,35 +34,35 @@ Frameworks:
 
 Login:
 <div>
-    <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/login.png?raw=true" />
+    <img width="500px" src="https://cdn.jsdelivr.net/gh/augvic/augvic@latest/screenshots/budget-control/1.png" />
 </div>
 
 <br>
 
 Create proposal:
 <div>
-    <img width="500px" src="https://raw.githubusercontent.com/augvic/budget-control/refs/heads/main/app/images/create_proposal.png" />
+    <img width="500px" src="https://cdn.jsdelivr.net/gh/augvic/augvic@latest/screenshots/budget-control/2.png" />
 </div>
 
 <br>
 
 First-level approval:
 <div>
-    <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/first_approval.png?raw=true" />
+    <img width="500px" src="https://cdn.jsdelivr.net/gh/augvic/augvic@latest/screenshots/budget-control/3.png" />
 </div>
 
 <br>
 
 Second-level approval:
 <div>
-    <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/second_approval.png?raw=true" />
+    <img width="500px" src="https://cdn.jsdelivr.net/gh/augvic/augvic@latest/screenshots/budget-control/4.png" />
 </div>
 
 <br>
 
 Including invoice (after all approvals):
 <div>
-    <img width="500px" src="https://github.com/augvic/budget-control/blob/main/app/images/including_nf.png?raw=true" />
+    <img width="500px" src="https://cdn.jsdelivr.net/gh/augvic/augvic@latest/screenshots/budget-control/5.png" />
 </div>
 
 <br>
